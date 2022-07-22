@@ -1,0 +1,30 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_check_euro"
+        android:shortcutId="bi_mycarconsume"
+        android:shortcutLongLabel="@string/first_fragment_label"
+        android:shortcutShortLabel="@string/first_fragment_label">
+        <intent
+            android:action="com.utkuglsvn.androidwidgetshortcutdemo.FIRST_FRAGMENT"
+            android:targetClass="com.utkuglsvn.androidwidgetshortcutdemo.MainActivity"
+            android:targetPackage="com.utkuglsvn.androidwidgetshortcutdemo" />
+
+
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_android"
+        android:shortcutId="bi_nearestStation"
+        android:shortcutLongLabel="@string/second_fragment_label"
+        android:shortcutShortLabel="@string/second_fragment_label">
+        <intent
+            android:action="com.utkuglsvn.androidwidgetshortcutdemo.SECOND_FRAGMENT"
+            android:targetClass="com.utkuglsvn.androidwidgetshortcutdemo.MainActivity"
+            android:targetPackage="com.utkuglsvn.androidwidgetshortcutdemo" />
+
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

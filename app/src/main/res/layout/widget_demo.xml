@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AndroidWidgetShortcutDemo.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AndroidWidgetShortcutDemo.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/appWidget_image"
+        style="@style/Widget.AndroidWidgetShortcutDemo.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_check_euro" />
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        style="@style/Widget.AndroidWidgetShortcutDemo.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:updatePeriodMillis="1"
+        android:textStyle="bold|italic"
+        tools:text="@string/widget_text" />
+</LinearLayout>
